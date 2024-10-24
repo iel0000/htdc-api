@@ -6,5 +6,6 @@ public class DbInitializer
 {
     internal static void Initialize(ModelBuilder builder)
     {
+        AdminProfileSeed.Initialize(builder);
     }
 }
