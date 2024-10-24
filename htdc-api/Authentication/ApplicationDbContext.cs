@@ -16,6 +16,7 @@ public class ApplicationDbContext: IdentityDbContext<IdentityUser>
     #region DbSets
     //Add Models to DbSet
     public DbSet<UserProfile> UserProfiles { get; set; }
+    public DbSet<Products> Products { get; set; }
     #endregion
     protected override void OnModelCreating(ModelBuilder builder)
     {
