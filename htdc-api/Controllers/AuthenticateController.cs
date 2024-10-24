@@ -54,7 +54,6 @@ public class AuthenticateController : BaseController
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("BranchId", userProfile.BranchId.Value.ToString(), ClaimValueTypes.String)
             };
 
             foreach (var userRole in userRoles)
@@ -77,7 +76,6 @@ public class AuthenticateController : BaseController
                 firstName = userProfile.FirstName,
                 lastName = userProfile.LastName,
                 lastLogin = lastLogin,
-                branchId = userProfile.BranchId,
                 id = user.Id
             });
         }

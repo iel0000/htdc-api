@@ -12,12 +12,11 @@ public class AdminProfileSeed
             {
                 Id = 1,
                 AspNetUserId = "b74ddd14-6340-4840-95c2-db12554843e5",
-                FirstName = "NHS",
+                FirstName = "Admin",
                 LastName = "Admin",
                 IsActive = true,
                 DateCreated = new DateTime(2022, 9, 19, 9, 47, 33, 959, DateTimeKind.Utc).AddTicks(5679),
-                Avatar = "",
-                BranchId = 1
+                Avatar = ""
             });
     }
 }

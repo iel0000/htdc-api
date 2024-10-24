@@ -12,5 +12,4 @@ public class UserProfile : BaseModel
 
     public DateTime? LastLogin { get; set; }
 
-    public int? BranchId { get; set; } = 0;
 }
