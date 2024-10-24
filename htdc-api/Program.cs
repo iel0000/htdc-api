@@ -131,11 +131,11 @@ var app = builder.Build();
 //}
 
 
-if (isDevelop)
-{
+// if (isDevelop)
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
 
 app.UseHttpsRedirection();
